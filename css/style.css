@@ -1,0 +1,52 @@
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
+/*Base code*/
+body, html, form {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background: #f7f7f7; }
+
+input[type=text] {
+  border: 1px solid black; }
+
+.cardcust {
+  background: #e9ecef;
+  border-radius: 6px; }
+
+.footersec {
+  background-color: #465052; }
+
+.social-links {
+  font-size: 28px;
+  color: #ffffff; }
+
+.social-links span {
+  margin-left: 10px; }
+
+.social-links:hover {
+  color: white; }
+
+header, .navbar {
+  background-color: #394c69 !important;
+  color: white !important; }
+
+.navbar a {
+  color: white !important; }
+
+header a {
+  color: white !important; }
+
+.cardcust .card {
+  width: 18rem; }
+
+.cardcust, .copyright {
+  text-align: center; }
+
+.container {
+  background: #ffffff; }
+
+.formcls {
+  border-radius: 6px;
+  padding: 12px;
+  /* box-shadow: 1px 2px 3px grey; */ }
