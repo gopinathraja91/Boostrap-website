@@ -6377,3 +6377,6 @@ header, .navbar {
 .formcls .card button {
   color: #343a40;
   font-weight: bold; }
+
+.footersec .links {
+  margin-top: 15px; }
