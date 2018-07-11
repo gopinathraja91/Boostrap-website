@@ -1,7 +1,7 @@
 @import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
 /*Base code*/
-body, html, form {
+body, html {
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
@@ -10,12 +10,46 @@ body, html, form {
 input[type=text] {
   border: 1px solid black; }
 
+/*Sass code*/
+.footersec a {
+  color: #ffffff; }
+
+.footersec span {
+  color: #ffffff; }
+
+.footersec p {
+  color: #ffffff; }
+
+.footersec .contdet {
+  margin-top: 30px; }
+
+.navbar a {
+  color: #ffffff !important; }
+
+header a {
+  color: #ffffff !important; }
+
+.container {
+  background: #ffffff; }
+
+.social-links:hover {
+  color: #ffffff; }
+
 .cardcust {
   background: #e9ecef;
   border-radius: 6px; }
 
 .footersec {
   background-color: #465052; }
+
+.formcls form {
+  background: #e4e5e6;
+  border-radius: 13px; }
+
+.cardcust .imgcls img {
+  height: 62%;
+  width: 70%;
+  margin-top: 21px; }
 
 .social-links {
   font-size: 28px;
@@ -24,18 +58,9 @@ input[type=text] {
 .social-links span {
   margin-left: 10px; }
 
-.social-links:hover {
-  color: white; }
-
 header, .navbar {
   background-color: #394c69 !important;
-  color: white !important; }
-
-.navbar a {
-  color: white !important; }
-
-header a {
-  color: white !important; }
+  color: #ffffff !important; }
 
 .cardcust .card {
   width: 18rem; }
@@ -43,10 +68,14 @@ header a {
 .cardcust, .copyright {
   text-align: center; }
 
-.container {
-  background: #ffffff; }
-
 .formcls {
   border-radius: 6px;
-  padding: 12px;
-  /* box-shadow: 1px 2px 3px grey; */ }
+  padding: 12px; }
+
+.enqform h3 {
+  font-size: 1.75rem;
+  text-shadow: 1px 2px 1px #908888;
+  margin: 7px 0px 0px 12px; }
+
+.navbar-nav a:hover {
+  color: red !important; }

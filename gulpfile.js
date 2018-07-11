@@ -46,4 +46,11 @@ gulp.task('browser-sync', function () {
   });
   }); 
 
-  gulp.task('default', ['browser-sync','sass']); 
+  gulp.task('watch', ['browser-sync', 'sass'], function () {
+    gulp.watch('sass/*.scss', ['sass']);
+    // Reloads the browser whenever HTML or JS files change
+    gulp.watch('./index.html', browserSync.reload);
+    gulp.watch('./js/*.js', browserSync.reload);
+    });
+
+  gulp.task('default', ['watch']); 
