@@ -4,7 +4,8 @@ $acolor: #ffffff;
 $bgcolor:#f7f7f7;
 $blackclr:black;
 
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+//@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
 
 /*Base code*/
@@ -19,6 +20,18 @@ input[type=text]{
 }
 
 /*Sass code*/
+
+%btn-color {
+    background-color: #666769;
+    border-color: #666769;
+}
+
+@mixin bgradius($color, $rad) {
+    background: $color;
+    border-radius: $rad;
+}
+
+
 .footersec{
     a{
 
@@ -50,16 +63,18 @@ header a{
     color:$acolor;
 }
 .cardcust{
-    background: #e9ecef;
-    border-radius: 6px;
+    @include bgradius(#e9ecef,6px);
+    /*background: #e9ecef;
+    border-radius: 6px;*/
 }
 .footersec{
     background-color: #465052;
 }
 .formcls{
     form{
-        background: #e4e5e6;
-        border-radius: 13px;
+        @include bgradius(#e4e5e6,13px);
+        /*background: #e4e5e6;
+        border-radius: 13px;*/
     }
 
 }
@@ -120,13 +135,11 @@ header,.navbar {
     }
 
     .btn.btn-dark{
-        background-color: #666769;
-       border-color: #666769;
+        @extend %btn-color;
    }
 }
 .btn.btn-dark{
-     background-color: #666769;
-    border-color: #666769;
+    @extend %btn-color;
 }
 
 
